@@ -1,0 +1,5 @@
+- 👋 Hi there, I’m @CamiWorks, this is my professional repository were I wil be uploading some of my personal and professional projects.
+- 👀 I’m interested in python development and automations over all, but I also love the stetics of a nice and well build webpage from scratch. 
+- 🌱 I’m currently learning to work with data.
+- 💞️ I’m looking to collaborate on any data related project, or UI/U.
+- 📫 Just take a look at my CV, and feel free to contact me. 
