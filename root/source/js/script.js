@@ -145,7 +145,7 @@ function drawChartProgramming() {
 function EnLang(){
     document.getElementById('content').innerHTML = `
     <div class="flex-box-container-body">
-        <video src="/root/source/media/sign.mp4" muted="muted" autoplay="autoplay" class="video-st" poster="/root/source/media/Capture.PNG"></video>
+        <video src="./root/source/media/sign.mp4" muted="muted" autoplay="autoplay" class="video-st" poster="./root/source/media/Capture.PNG"></video>
         <p>Camilo Sierra L.<br>
             <span style="font-size: small;">Data Analyst</span>
         </p>
@@ -163,7 +163,7 @@ function EnLang(){
                 <br><br>
                 <a href="https://www.linkedin.com/in/camilo-sierra-7a9637265" target="_blank" style="text-decoration: underline; font-size: small; color: rgb(159, 159, 159);">A bit more...</a>    
             </div>
-        <img id="animation" src="/root/source/media/Decription.jpg" alt="FileCorrupted">
+        <img id="animation" src="./root/source/media/Decription.jpg" alt="FileCorrupted">
     </div>
 
 <!--experiences -->
@@ -174,8 +174,8 @@ function EnLang(){
 </div>
 <div class="containe-experiences">
     <div class="experiences">
-        <img id="wideDisplay" src="/root/source/media/ITtech.jpg" alt="companyimage">
-        <img id="phoneDisplay" src="/root/source/media/ITtech.jpg" alt="companyimage">
+        <img id="wideDisplay" src="./root/source/media/ITtech.jpg" alt="companyimage">
+        <img id="phoneDisplay" src="./root/source/media/ITtech.jpg" alt="companyimage">
         <div class="experience-des-cont">
             <h3 style="width: 100%;">IT Technician</h3>
             <p style="width: 100%;"class="experience-description">
@@ -193,7 +193,7 @@ function EnLang(){
     </div>
 
     <div class="experiences">
-        <img id="phoneDisplay" src="/root/source/media/SQL.jpg" alt="companyimage">
+        <img id="phoneDisplay" src="./root/source/media/SQL.jpg" alt="companyimage">
         <div class="experience-des-cont">
             <h3>SQL Programmer</h3>
             <p style="width: 100%;" class="experience-description">
@@ -207,12 +207,12 @@ function EnLang(){
             </p>
             <a href="https://www.tecsys.com/" target="_blank"><button class="experience-web-page">Web</button></a>
         </div>
-        <img id="wideDisplay" src="/root/source/media/SQL.jpg" alt="companyimage">
+        <img id="wideDisplay" src="./root/source/media/SQL.jpg" alt="companyimage">
     </div>
 
     <div class="experiences">
-        <img id="wideDisplay" src="/root/source/media/Chocolate.png" alt="companyimage">
-        <img id="phoneDisplay" src="/root/source/media/Chocolate.png" alt="companyimage">
+        <img id="wideDisplay" src="./root/source/media/Chocolate.png" alt="companyimage">
+        <img id="phoneDisplay" src="./root/source/media/Chocolate.png" alt="companyimage">
         <div class="experience-des-cont">
             <h3 style="width: 100%;">Marketing Specialist</h3>
             <p style="width: 100%;"class="experience-description">
@@ -229,7 +229,7 @@ function EnLang(){
     </div>
 
     <div class="experiences">
-        <img id="phoneDisplay" src="/root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
+        <img id="phoneDisplay" src="./root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
         <div class="experience-des-cont">
             <h3>Customer Support</h3>
             <p style="width: 100%;" class="experience-description">
@@ -241,7 +241,7 @@ function EnLang(){
                 </p>
             <a href="https://teleperformance.com/en-us/locations/colombia-site/colombia/" target="_blank"><button class="experience-web-page">Web</button></a>
         </div>
-        <img id="wideDisplay" src="/root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
+        <img id="wideDisplay" src="./root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
     </div>
 </div>
 
@@ -253,8 +253,8 @@ function EnLang(){
 
 <div class="containe-experiences">
     <div class="experiences">
-        <img id="wideDisplay" src="/root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
-        <img id="phoneDisplay" src="/root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
+        <img id="wideDisplay" src="./root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
+        <img id="phoneDisplay" src="./root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
         <div class="experience-des-cont">
             <h3>Web Development</h3>
             <p style="width: 100%;"class="experience-description">
@@ -284,7 +284,7 @@ function EnLang(){
 
     <div class="education-description">
         <img
-        src="/root/source/media/lselogo.png"
+        src="./root/source/media/lselogo.png"
         alt="logo-intitution">
         <div class="des-edu-container">
 
@@ -300,7 +300,7 @@ function EnLang(){
 
     <div class="education-description">
         <img
-        src="/root/source/media/teccartinst.png"
+        src="./root/source/media/teccartinst.png"
         alt="logo-intitution">
         <div class="des-edu-container">
 
@@ -316,7 +316,7 @@ function EnLang(){
     <div class="education-description">
             <img
             class="senaimage"
-            src="/root/source/media/sena.png"
+            src="./root/source/media/sena.png"
             alt="logo-intitution" id="sena">
         <div class="des-edu-container">
             <h3>SENA - (National Learning Insitute)</h3>
@@ -419,7 +419,7 @@ function EnLang(){
 <p>-----------------Visit------------></p>
 
 <div class="project-works">
-<a href="https://github.com/CamiWorks"> <img src="/root/source/media/GitHub-logow.png" alt="gitlogo"></a>
+<a href="https://github.com/CamiWorks"> <img src="./root/source/media/GitHub-logow.png" alt="gitlogo"></a>
 </div>
 <p><-----------------Visit------------</p>
 
@@ -435,7 +435,7 @@ function EnLang(){
 <div class="contact-container">
 <div class="form-container-input">
 <form action="https://formsubmit.co/sierra170299camilo@gmail.com" method="POST" class="form-input-holder">
-    <input type="hidden" name="_next" value="/root/source/pages/thanks.html">
+    <input type="hidden" name="_next" value="./root/source/pages/thanks.html">
     <input type="text" name="name" placeholder="Name" required> <br>
     <input type="email" name="email" placeholder="E-mail" required> <br>
     <input type="text" name="Message" placeholder="Message" class="message-style" required > <br>
@@ -452,7 +452,7 @@ function FrLang(){
     document.getElementById('content').innerHTML = `
     
 <div class="flex-box-container-body">
-<video src="/root/source/media/sign.mp4" muted="muted" autoplay="autoplay" class="video-st" poster="/root/source/media/Capture.PNG"></video>
+<video src="./root/source/media/sign.mp4" muted="muted" autoplay="autoplay" class="video-st" poster="./root/source/media/Capture.PNG"></video>
 <p>Camilo Sierra L.<br>
     <span style="font-size: small;">Analyste de données</span>
 </p>
@@ -470,7 +470,7 @@ function FrLang(){
          <br><br>
         <a href="https://www.linkedin.com/in/camilo-sierra-7a9637265" target="_blank" style="text-decoration: underline; font-size: small; color: rgb(159, 159, 159);">Un peu plus...</a>    
     </div>
-<img id="animation" src="/root/source/media/Decription.jpg" alt="FileCorrupted">
+<img id="animation" src="./root/source/media/Decription.jpg" alt="FileCorrupted">
 </div>
 
 <!--experiences -->
@@ -481,8 +481,8 @@ function FrLang(){
 </div>
 <div class="containe-experiences">
 <div class="experiences">
-<img id="wideDisplay" src="/root/source/media/ITtech.jpg" alt="companyimage">
-<img id="phoneDisplay" src="/root/source/media/ITtech.jpg" alt="companyimage">
+<img id="wideDisplay" src="./root/source/media/ITtech.jpg" alt="companyimage">
+<img id="phoneDisplay" src="./root/source/media/ITtech.jpg" alt="companyimage">
 <div class="experience-des-cont">
     <h3 style="width: 100%;">Support technique</h3>
     <p style="width: 100%;"class="experience-description">
@@ -500,7 +500,7 @@ function FrLang(){
 </div>
 
 <div class="experiences">
-<img id="phoneDisplay" src="/root/source/media/SQL.jpg" alt="companyimage">
+<img id="phoneDisplay" src="./root/source/media/SQL.jpg" alt="companyimage">
 <div class="experience-des-cont">
     <h3>Programmeur SQL</h3>
     <p style="width: 100%;" class="experience-description">
@@ -514,12 +514,12 @@ function FrLang(){
     </p>
     <a href="https://www.tecsys.com/" target="_blank"><button class="experience-web-page">Web</button></a>
 </div>
-<img id="wideDisplay" src="/root/source/media/SQL.jpg" alt="companyimage">
+<img id="wideDisplay" src="./root/source/media/SQL.jpg" alt="companyimage">
 </div>
 
 <div class="experiences">
-<img id="wideDisplay" src="/root/source/media/Chocolate.png" alt="companyimage">
-<img id="phoneDisplay" src="/root/source/media/Chocolate.png" alt="companyimage">
+<img id="wideDisplay" src="./root/source/media/Chocolate.png" alt="companyimage">
+<img id="phoneDisplay" src="./root/source/media/Chocolate.png" alt="companyimage">
 <div class="experience-des-cont">
     <h3 style="width: 100%;">Spécialiste du marketing</h3>
     <p style="width: 100%;"class="experience-description">
@@ -536,7 +536,7 @@ function FrLang(){
 </div>
 
 <div class="experiences">
-<img id="phoneDisplay" src="/root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
+<img id="phoneDisplay" src="./root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
 <div class="experience-des-cont">
     <h3>Support client</h3>
     <p style="width: 100%;" class="experience-description">
@@ -548,7 +548,7 @@ function FrLang(){
         </p>
     <a href="https://teleperformance.com/en-us/locations/colombia-site/colombia/" target="_blank"><button class="experience-web-page">Web</button></a>
 </div>
-<img id="wideDisplay" src="/root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
+<img id="wideDisplay" src="./root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
 </div>
 </div>
 
@@ -560,8 +560,8 @@ function FrLang(){
 
 <div class="containe-experiences">
 <div class="experiences">
-<img id="wideDisplay" src="/root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
-<img id="phoneDisplay" src="/root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
+<img id="wideDisplay" src="./root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
+<img id="phoneDisplay" src="./root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
 <div class="experience-des-cont">
     <h3>Développement Web</h3>
     <p style="width: 100%;"class="experience-description">
@@ -591,7 +591,7 @@ function FrLang(){
 
 <div class="education-description">
 <img
-src="/root/source/media/lselogo.png"
+src="./root/source/media/lselogo.png"
 alt="logo-intitution">
 <div class="des-edu-container">
 
@@ -607,7 +607,7 @@ alt="logo-intitution">
 
 <div class="education-description">
 <img
-src="/root/source/media/teccartinst.png"
+src="./root/source/media/teccartinst.png"
 alt="logo-intitution">
 <div class="des-edu-container">
     <h3>Institut Teccart</h3>
@@ -622,7 +622,7 @@ alt="logo-intitution">
 <div class="education-description">
     <img
     class="senaimage"
-    src="/root/source/media/sena.png"
+    src="./root/source/media/sena.png"
     alt="logo-intitution" id="sena">
 <div class="des-edu-container">
     <h3>SENA - (Institut national d'apprentissage)</h3>
@@ -725,7 +725,7 @@ alt="logo-intitution">
 <p>-----------------Visit------------></p>
 
 <div class="project-works">
-<a href="https://github.com/CamiWorks"> <img src="/root/source/media/GitHub-logow.png" alt="gitlogo"></a>
+<a href="https://github.com/CamiWorks"> <img src="./root/source/media/GitHub-logow.png" alt="gitlogo"></a>
 </div>
 <p><-----------------Visit------------</p>
 
@@ -741,7 +741,7 @@ alt="logo-intitution">
 <div class="contact-container">
 <div class="form-container-input">
 <form action="https://formsubmit.co/sierra170299camilo@gmail.com" method="POST" class="form-input-holder">
-<input type="hidden" name="_next" value="/root/source/pages/thanks.html">
+<input type="hidden" name="_next" value="./root/source/pages/thanks.html">
 <input type="text" name="name" placeholder="Nom" required> <br>
 <input type="email" name="email" placeholder="E-mail" required> <br>
 <input type="text" name="Message" placeholder="Message" class="message-style" required > <br>
@@ -759,7 +759,7 @@ function EsLang(){
     document.getElementById('content').innerHTML = `
     
     <div class="flex-box-container-body">
-    <video src="/root/source/media/sign.mp4" muted="muted" autoplay="autoplay" class="video-st" poster="/root/source/media/Capture.PNG"></video>
+    <video src="./root/source/media/sign.mp4" muted="muted" autoplay="autoplay" class="video-st" poster="./root/source/media/Capture.PNG"></video>
     <p>Camilo Sierra L.<br>
         <span style="font-size: small;">Analista de datos</span>
     </p>
@@ -777,7 +777,7 @@ function EsLang(){
             <br><br>
             <a href="https://www.linkedin.com/in/camilo-sierra-7a9637265" target="_blank" style="text-decoration: underline; font-size: small; color: rgb(159, 159, 159);">Un poco más...</a>    
         </div>
-    <img id="animation" src="/root/source/media/Decription.jpg" alt="FileCorrupted">
+    <img id="animation" src="./root/source/media/Decription.jpg" alt="FileCorrupted">
 </div>
 
 <!--experiences -->
@@ -788,8 +788,8 @@ function EsLang(){
 </div>
 <div class="containe-experiences">
 <div class="experiences">
-    <img id="wideDisplay" src="/root/source/media/ITtech.jpg" alt="companyimage">
-    <img id="phoneDisplay" src="/root/source/media/ITtech.jpg" alt="companyimage">
+    <img id="wideDisplay" src="./root/source/media/ITtech.jpg" alt="companyimage">
+    <img id="phoneDisplay" src="./root/source/media/ITtech.jpg" alt="companyimage">
     <div class="experience-des-cont">
         <h3 style="width: 100%;">Técnico IT</h3>
         <p style="width: 100%;"class="experience-description">
@@ -807,7 +807,7 @@ function EsLang(){
 </div>
 
 <div class="experiences">
-    <img id="phoneDisplay" src="/root/source/media/SQL.jpg" alt="companyimage">
+    <img id="phoneDisplay" src="./root/source/media/SQL.jpg" alt="companyimage">
     <div class="experience-des-cont">
         <h3> Programador SQL </h3>
         <p style="width: 100%;" class="experience-description">
@@ -821,12 +821,12 @@ function EsLang(){
         </p>
         <a href="https://www.tecsys.com/" target="_blank"><button class="experience-web-page">Web</button></a>
     </div>
-    <img id="wideDisplay" src="/root/source/media/SQL.jpg" alt="companyimage">
+    <img id="wideDisplay" src="./root/source/media/SQL.jpg" alt="companyimage">
 </div>
 
 <div class="experiences">
-    <img id="wideDisplay" src="/root/source/media/Chocolate.png" alt="companyimage">
-    <img id="phoneDisplay" src="/root/source/media/Chocolate.png" alt="companyimage">
+    <img id="wideDisplay" src="./root/source/media/Chocolate.png" alt="companyimage">
+    <img id="phoneDisplay" src="./root/source/media/Chocolate.png" alt="companyimage">
     <div class="experience-des-cont">
         <h3 style="width: 100%;">Especialista en marketing</h3>
         <p style="width: 100%;"class="experience-description">
@@ -843,7 +843,7 @@ function EsLang(){
 </div>
 
 <div class="experiences">
-    <img id="phoneDisplay" src="/root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
+    <img id="phoneDisplay" src="./root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
     <div class="experience-des-cont">
         <h3>Atención al cliente</h3>
         <p style="width: 100%;" class="experience-description">
@@ -855,7 +855,7 @@ function EsLang(){
             </p>
         <a href="https://teleperformance.com/en-us/locations/colombia-site/colombia/" target="_blank"><button class="experience-web-page">Web</button></a>
     </div>
-    <img id="wideDisplay" src="/root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
+    <img id="wideDisplay" src="./root/source/media/Top-Qualities-of-a-Call-Center-Agent.png" alt="companyimage">
 </div>
 </div>
 
@@ -868,8 +868,8 @@ function EsLang(){
 
 <div class="containe-experiences">
 <div class="experiences">
-    <img id="wideDisplay" src="/root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
-    <img id="phoneDisplay" src="/root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
+    <img id="wideDisplay" src="./root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
+    <img id="phoneDisplay" src="./root/source/media/ART_AHOD_20_LatinAmericanArt_md.jpg" alt="companyimage">
     <div class="experience-des-cont">
         <h3>Desarrollo web</h3>
         <p style="width: 100%;"class="experience-description">
@@ -899,7 +899,7 @@ function EsLang(){
 
 <div class="education-description">
     <img
-    src="/root/source/media/lselogo.png"
+    src="./root/source/media/lselogo.png"
     alt="logo-intitution">
     <div class="des-edu-container">
 
@@ -915,7 +915,7 @@ function EsLang(){
 
 <div class="education-description">
     <img
-    src="/root/source/media/teccartinst.png"
+    src="./root/source/media/teccartinst.png"
     alt="logo-intitution">
     <div class="des-edu-container">
 
@@ -931,7 +931,7 @@ function EsLang(){
 <div class="education-description">
         <img
         class="senaimage"
-        src="/root/source/media/sena.png"
+        src="./root/source/media/sena.png"
         alt="logo-intitution" id="sena">
     <div class="des-edu-container">
         <h3>SENA - (Instituto Nacional de Aprendizaje)</h3>
@@ -1030,7 +1030,7 @@ function EsLang(){
 <p>-----------------Visit------------></p>
 
 <div class="project-works">
-<a href="https://github.com/CamiWorks"> <img src="/root/source/media/GitHub-logow.png" alt="gitlogo"></a>
+<a href="https://github.com/CamiWorks"> <img src="./root/source/media/GitHub-logow.png" alt="gitlogo"></a>
 </div>
 <p><-----------------Visit------------</p>
 
@@ -1046,7 +1046,7 @@ function EsLang(){
 <div class="contact-container">
 <div class="form-container-input">
 <form action="https://formsubmit.co/sierra170299camilo@gmail.com" method="POST" class="form-input-holder">
-<input type="hidden" name="_next" value="/root/source/pages/thanks.html">
+<input type="hidden" name="_next" value="./root/source/pages/thanks.html">
 <input type="text" name="name" placeholder="Nombre" required> <br>
 <input type="email" name="email" placeholder="Correo" required> <br>
 <input type="text" name="Message" placeholder="Mensaje" class="message-style" required > <br>
@@ -1078,9 +1078,9 @@ function nav(lang,one,two,thr,fr,fv){
     <!--drop down manu-->
 
     <div class="respon-container-flex">
-        <img  src="/root/source/media/menu.png" alt="menuslide" onclick="displayMenu()" >
+        <img  src="./root/source/media/menu.png" alt="menuslide" onclick="displayMenu()" >
         <p class="tittle-resp-menu">CAMILO SIERRA</p>
-        <img class="lang" src="/root/source/media/language.png" alt="" onclick="displayMenulangdrop()">
+        <img class="lang" src="./root/source/media/language.png" alt="" onclick="displayMenulangdrop()">
     </div>
     
     
@@ -1103,7 +1103,7 @@ function nav(lang,one,two,thr,fr,fv){
                 
                 </a>
                 <div class="langdropdown" onclick="hideMenulangdrop()">
-                    <img src="/root/source/media/upload.png" alt="upload">
+                    <img src="./root/source/media/upload.png" alt="upload">
                 </div>
             </div>
     </nav>
@@ -1144,7 +1144,7 @@ function nav(lang,one,two,thr,fr,fv){
             </a>
             
             <div class="hidemenudropdown" onclick="hideMenu()">
-                <img src="/root/source/media/upload.png" alt="upload">
+                <img src="./root/source/media/upload.png" alt="upload">
             </div>
         </div>
     </nav>
@@ -1190,7 +1190,7 @@ function nav(lang,one,two,thr,fr,fv){
                     ${fv}
                 </div>
             </a>
-            <img id="showlang" class="lang" src="/root/source/media/language.png" alt="" onclick="showlang()">
+            <img id="showlang" class="lang" src="./root/source/media/language.png" alt="" onclick="showlang()">
         </div>
     </nav>
     
@@ -1213,7 +1213,7 @@ function nav(lang,one,two,thr,fr,fv){
     ${es}
     </a></div>
     <div class="langdropup" onclick="hidelang()">
-        <img src="/root/source/media/upload.png" alt="upload">
+        <img src="./root/source/media/upload.png" alt="upload">
     </div>
     </div>
     </nav>`
