@@ -1,3 +1,4 @@
+
 // Load the Visualization API and the corechart package.
 google.charts.load('current', {packages: ['corechart']});
 function displayMenu(){
@@ -1059,7 +1060,6 @@ function EsLang(){
     document.getElementById('navContainer').innerHTML = nav('ES', 'EXPERIENCIA', 'EDUCACIÓN', 'HABILIDADES', 'TRABAJO', 'CONTACTO')
     loadg()
 }
-
 function nav(lang,one,two,thr,fr,fv){ 
 
     let en = 'EN'
@@ -1220,7 +1220,6 @@ function nav(lang,one,two,thr,fr,fv){
     final_nav = navigation.replace(` ${lang} `,`<u>${lang}</u>`)
     return final_nav
 }
-
 function sharelink() {
     let contectShare = `
 
@@ -1260,9 +1259,9 @@ function sharelink() {
                                                                        /"      "|
 </pre>
     `
-    document.getElementById('shareCon').innerHTML = contectShare
+    //document.getElementById('shareCon').innerHTML = contectShare
 }
 
 
 EnLang()
-sharelink()
+//sharelink()
