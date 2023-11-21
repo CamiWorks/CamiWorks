@@ -383,7 +383,6 @@ input:focus{
     background-color: rgb(56, 56, 56);
     border-bottom: 0.7px solid #ffffff;
     transition-duration:1s ;
-    min-width: 50%;
 }
 .contact-container{
     display: flex;

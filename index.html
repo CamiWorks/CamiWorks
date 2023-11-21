@@ -27,11 +27,12 @@
     <title>Camilo Sierra</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-         .sidekick {
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: invert(100%);
-        }
         .shareLinkMedia{
+            background: rgba(239, 239, 239, 0.212);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            opacity: 0.99;
+            border-radius: 20px;
             position:fixed;
             left: 50%;
             top: 50%;
@@ -39,21 +40,60 @@
             -moz-transform:translate(-50%,-50%);
             -webkit-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
-            max-width: 70%;
-            height: 70%;
-            display: flex;
-            flex-wrap: wrap;
-
+            min-width: 50%;
+        }
+        .buttonholder{
+            max-height: 4%;
+            min-width: 100%;
+            margin: none;
+            padding: 1% 0% 1% 0%;
+        }
+        .buttonholder button{
+            background: none;
+            border: none;
+            color: white;
+            font-size: 110%;
+            margin-left: 92%; 
+            width: 7%; 
+            height: 3vh;
         }
         .shareCon{
-            background-color: blue;
-            max-width: 90%;
-            max-height: 90%;
-            margin-top: 3%;
+            max-width: auto;
+            max-height: 100%;
             margin-left: 5%;
-    
+            margin-right: 5%;
+            font-size: 90%;
+            display: flex;
+            justify-content: space-around;
         }
-
+        .copytext{
+            background: rgba(0, 0, 0, 0.57);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+        }
+        .copytext button{
+            margin: 5% 0% 3% 0%;
+            background-color: rgb(204, 204, 204);
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 0px 20px 20px 0px;
+            min-width: 70px;
+            
+        }
+        .copytext button:hover{
+            transition-duration: 0.7s;
+            background-color: rgb(98, 98, 98);
+            color: white;
+        }
+        .copytext input{
+            margin: 5% 0% 3% 30%;
+            background-color: white;
+            color: black;
+            margin: none;
+            border-radius: 20px 0px 0px 20px;
+        }
     </style>
 </head>
 
@@ -66,6 +106,7 @@
     
 <div class="content" id="content"></div>
 <div id="navContainer"></div>
+<div id="contdisplpop"></div>
 
 
 	<!-- LABELS -->
@@ -79,24 +120,13 @@
 			<div class="tagShort"> <span class="material-symbols-outlined">
                 share
                 </span> </div>
-			<div class="tagLong"> <a href="" onclick="sharelink()"> <u>  Share ♥️ </u> </a> </div>
+			<div class="tagLong"> <button type="button" onclick="sharelink()"><u>  Share ♥️ </u></button></div>
 		</div>
     </div>
 
 
 
 
-<!--
-
-        <div class="backgroundsharecon" >
-        <div class="shareLinkMedia" style="background-color: red;">
-                  <button style="margin-left: 90%;">X</button>
-            <div id="shareCon" class="shareCon">
-            </div>
-        </div>
-    </div>
-    
--->
 
 
 <footer>

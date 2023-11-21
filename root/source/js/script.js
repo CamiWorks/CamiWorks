@@ -1220,48 +1220,75 @@ function nav(lang,one,two,thr,fr,fv){
     final_nav = navigation.replace(` ${lang} `,`<u>${lang}</u>`)
     return final_nav
 }
-function sharelink() {
-    let contectShare = `
 
-    <pre>
-    _____________________
-  | Thank you for sharing |
-    =====================
-                      \
-              .-=-==--==--.
-                              ..-=="  ,'o')      '.
-                             '         ';'          \
-                           :  (         ;            '.__...._
-                           |                  )    /         '-=-.
-                           :       ,vv.-._   /    /               '---==-._
-                            \/\/\/VV ^ d88';'    /                         '.
-                                ''  ^/d88P!'    /             ,              ''._
-                                   ^/    !'   ,.      ,      /                  "-,,__,,--'""""-.
-                                  ^/    !'  ,'  \ . .(      (         _           )  ) ) ) ))_,-.\
-                                 ^(__ ,!',"'   ;:+.:%:a.     \:.. . ,'          )  )  ) ) ,"'    '
-                                 ',,,'','     /o:::":%:%a.    \:.:.:         .    )  ) _,'
-                                  """'       ;':::'' '+%%%a._  \%:%|         ;.). _,-""
-                                         ,-='_.-'      '':%::)  )%:|        /:._,"
-                                        (/(/"           ," ,'_,'%%%:       (_,'
-                                                       (  (//('.___;        \
-                                                        \     \     '         '
-                                                         ''.    ''.   '.       :
-                                                           \. . .\    : . . . :
-                                                            \. . .:    '.. . .:
-                                                             '..:.:\     \:...\
-                                                              ;:.:.;      ::...:
-                                                              ):%::       :::::;
-                                                          __,::%:(        :::::
-                                                       ,;:%%%%%%%:        ;:%::
-                                                         ;,--""-.'\  ,=--':%:%:\
-                                                        /"       "| /-".:%%%%%%%\
-                                                                        ;,-"'')%%)
-                                                                       /"      "|
-</pre>
+function sharelink() {
+document.getElementById('contdisplpop').innerHTML = `
+    <div class="shareLinkMedia" >
+    <div class="buttonholder"><button type="button" onclick="closepop()">X</button></div>
+    <div class="shareCon"> <center><div id="shareCon" style="text-align: left;"></div></center> </div>
+    <div class="copytext" id="copytext"><input type="text" id="linkshare" value="https://camiworks.github.io/CamiWorks/">
+    <button type="button" onclick="myFunction('linkshare')">
+    Copy</button></div>
+</div>
     `
-    //document.getElementById('shareCon').innerHTML = contectShare
+
+    let contectShare = `
+            <pre class="dino"> 
+
+          _____________________
+        | Thank you for sharing |
+          =====================
+                            \
+
+                .-=-==--==--.
+            ..-=="  ,'o')      '.
+        /         ';'        \
+        
+        /                      :
+        :                        '.__...._
+        |                  )    /         '-=-.
+        :       ,vv.-._   /    /               '---==-._
+        \/\/\/VV ^ d88';'    /                         '.
+            ''  ^/d88P!'    /             ,              ''._
+                ^/    !'   ,.      ,      /                  "-,,__,,--'""""-.
+                ^/    !'  ,'  \ . .(      (         _           )  ) ) ) ))_,-.\
+
+                ^(__ ,!',"'   ;:+.:%:a.     \:.. . ,'          )  )  ) ) ,"'    '
+                ',,,'','     /o:::":%:%a.    \:.:.:         .    )  ) _,'
+                """'       ;':::'' '+%%%a._  \%:%|         ;.). _,-""
+                        ,-='_.-'      '':%::)  )%:|        /:._,"
+                    (/(/"           ," ,'_,'%%%:       (_,'
+                                    (  (//('.___;        \
+
+                                \     \     '         '
+                                    ''.    ''.   '.       :
+                                        \. . .\    : . . . :
+                                        \. . .:    '.. . .:
+                                        '..:.:\     \:...\
+
+                                        ;:.:.;      ::...:
+                                        ):%::       :::::;
+                                    __,::%:(        :::::
+                                ,;:%%%%%%%:        ;:%::
+                                    ;,--""-.'\  ,=--':%:%:\
+
+                                /"       "| /-".:%%%%%%%\
+
+                                                ;,-"'')%%)
+                                                /"      "|
+                                                
+                                                </pre>
+    `
+    document.getElementById('shareCon').innerHTML = contectShare
+}
+function closepop(){
+    document.getElementById('contdisplpop').innerHTML = ""
 }
 
+function myFunction(myId) {
+    var copyText = document.getElementById(myId);
+    copyText.select();
+    document.execCommand("copy");
+  }
 
 EnLang()
-//sharelink()
