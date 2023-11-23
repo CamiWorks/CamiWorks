@@ -629,7 +629,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formsubmit.co/sierra170299camilo@gmail.com" method="POST" > <!--role="form" class="php-email-form"-->
+            <form action="https://formsubmit.co/sierra170299camilo@gmail.com" method="POST" class="php-email-form"> <!--role="form" -->
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Full Name</label>
@@ -703,15 +703,15 @@
   document.getElementById('shareButton').addEventListener('click', () => {
   if (navigator.share) {
     navigator.share({
-      title: 'Share Example',
-      text: 'Check out this awesome content!',
-      url: 'https://example.com'
+      title: 'Camilo Sierra',
+      text: 'Check out this content!',
+      url: 'https://camiworks.github.io/CamiWorks/'
     })
     .then(() => console.log('Successful share'))
     .catch((error) => console.log('Error sharing:', error));
   } else {
     // Fallback for browsers that do not support the Share API
-    const shareUrl = 'https://example.com'; // Replace with your actual URL
+    const shareUrl = 'https://camiworks.github.io/CamiWorks/'; // Replace with your actual URL
     const dummyInput = document.createElement('input');
     document.body.appendChild(dummyInput);
     dummyInput.value = shareUrl;
