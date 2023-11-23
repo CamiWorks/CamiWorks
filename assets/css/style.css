@@ -997,14 +997,14 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
+  margin: 5%;
 }
 
 .align-items-stretch input,
 .align-items-stretch label {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   margin-bottom: 10px;
 }
 
@@ -1015,7 +1015,7 @@ section {
   box-shadow: none;
   font-size: 14px;
 
-  background: linear-gradient(to right, #ffffff65, #b4bbcd65 , #ffffff65); ;
+  background: linear-gradient(to right, #ffffff65, #dbdee565 , #ffffff65); ;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   opacity: 0.99;
@@ -1023,11 +1023,11 @@ section {
 }
 
 .align-items-stretch input:hover{
-  background: linear-gradient(to right, #dcd0d065, #40475865 , #dcd0d065); ;
+  background: linear-gradient(to right, #b5bac765, #dcd0d065 , #b5bac765); ;
 
 }
 .messageStyle{
-  min-height: 20vh;
+  min-height: 30vh;
 }
 .sendtempform{
   margin: 10px;
@@ -1045,7 +1045,8 @@ section {
 }
 
 .lesswithform input{
-  max-width: 57%;
+  width: 100%;
+  margin-left:5%;
 }
 
 
