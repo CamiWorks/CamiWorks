@@ -1,147 +1,744 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Programmer">
-    <meta name="description" content="CV Camilo Sierra Lozano">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel = "icon" href = 
-        "./root/source/media/title-logo.png" 
-                type = "image/x-icon">
-    <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
-            <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;800&family=Sacramento&display=swap"
-            rel="stylesheet">
-    <link rel="stylesheet" href="./root/source/css/styles.css">
-    <title>Camilo Sierra</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        .shareLinkMedia{
-            background: rgba(239, 239, 239, 0.212);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            opacity: 0.99;
-            border-radius: 20px;
-            position:fixed;
-            left: 50%;
-            top: 50%;
-            -ms-transform: translate(-50%,-50%);
-            -moz-transform:translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            min-width: 50%;
-        }
-        .buttonholder{
-            max-height: 4%;
-            min-width: 100%;
-            margin: none;
-            padding: 1% 0% 1% 0%;
-        }
-        .buttonholder button{
-            background: none;
-            border: none;
-            color: white;
-            font-size: 110%;
-            margin-left: 92%; 
-            width: 7%; 
-            height: 3vh;
-        }
-        .shareCon{
-            max-width: auto;
-            max-height: 100%;
-            margin-left: 5%;
-            margin-right: 5%;
-            font-size: 90%;
-            display: flex;
-            justify-content: space-around;
-        }
-        .copytext{
-            background: rgba(0, 0, 0, 0.57);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            border-radius: 0px 0px 20px 20px;
-            display: flex;
-        }
-        .copytext button{
-            margin: 5% 0% 3% 0%;
-            background-color: rgb(204, 204, 204);
-            color: rgb(0, 0, 0);
-            border: none;
-            border-radius: 0px 20px 20px 0px;
-            min-width: 70px;
-            
-        }
-        .copytext button:hover{
-            transition-duration: 0.7s;
-            background-color: rgb(98, 98, 98);
-            color: white;
-        }
-        .copytext input{
-            margin: 5% 0% 3% 30%;
-            background-color: white;
-            color: black;
-            margin: none;
-            border-radius: 20px 0px 0px 20px;
-        }
-    </style>
-</head>
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Camilo Sierra</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Tech Icons import -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .alert-success {
+      position: fixed;
+      bottom: 50%;
+      right: 10px;
+      z-index: 1000;
+      padding: 20px;
+      filter: blur(80%);
+      color: #d2d5df;
+      border: none;
+      cursor: pointer;
+
+      background: #50577aa6;
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      opacity: 0.99;
+    }
+    .alert-success button{
+      background: none;
+      color: #d2d5df;
+      border: none;
+      font-size: 20px;
+    }
+    #shareButton{
+      background-color: #474E68;
+      color: #d2d5df;
+      border: 1px solid #d2d5df;
+      border-radius: 50%;
+      padding: 5px;
+      width: 35px;
+    }
+    #shareButton:hover{
+      background-color: #d2d5df;
+      color: #474E68;
+
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
 <body>
 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-
-
-    
-<div class="content" id="content"></div>
-<div id="navContainer"></div>
-<div id="contdisplpop"></div>
-
-
-	<!-- LABELS -->
-	<div class="tags">
-		<div class="tag tag1">
-			<div class="tagShort"> <img src="./root/source/media/linkedin.png" alt="linked-in-logo" style="max-width: 50%;"> </div>
-			<div class="tagLong"> <a href="https://www.linkedin.com/in/camilo-sierra-7a9637265"> <u>Linked-In</u> </a> </div>
-		</div>
-<!-- 		<br><br><br> -->
-		<div class="tag tag2">
-			<div class="tagShort"> <span class="material-symbols-outlined">
-                share
-                </span> </div>
-			<div class="tagLong"> <button type="button" onclick="sharelink()"><u>  Share ♥️ </u></button></div>
-		</div>
-    </div>
-
-
-
-
-
-
-<footer>
-        <a href='https://www.freepik.com/photos/computer'>Computer photo created by lucabravo - www.freepik.com</a>
-        <div>Icons made by
-            <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>from<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            <div>Icons made by
-                <a href="https://www.freepik.com" title="Freepik">Freepik</a>from<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            </div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Camilo Sierra</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="http://www.linkedin.com/in/camilo-sierra-7a9637265" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <button id="shareButton"><i class="bi bi-share-fill"></i></button>
         </div>
-</footer>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Brief</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-database-gear"></i> <span>Skills</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <!--To be added on tha dvance of my carrer-->
+          <!--<li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>-->
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Camilo Sierra</h1>
+      <p><span class="typed" data-typed-items="Data-Analyst, Future Data-Scientist, Future AI Developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+      <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>Hi, my name is Camilo Sierra, and I am a developer and a certified IT tech. I have worked with big and small corporations for over 4 years building new platforms, while providing technical support and solutions in a variaty of technologies.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Math, Stats &amp; Tech.</h3> <br>
+            <p class="fst-italic">
+              To be honest, I started before as a marketing specialist and throughout the years I discovered a 
+              hidden passion for technology and exact science. Since then I have built my professional, and a good part of my personal life as well, around the world of technology and numbers.
+            </p> <br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Years of Experience:</strong> <span>4 +</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>Colombian 🇨🇴</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>AEC / DEP / Micro-Bachelors</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Quebec, Canada 🇨🇦</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="testimonials section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Here are some of my skills and technologies I use on my day to day.</p>
+        </div>
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <i class="devicon-python-plain"></i>
+                      <div>Python</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-mysql-plain"></i>
+                      <div>SQL</div>
+                    </div>
+                    <div class="col">
+                      <i class="bi bi-percent"></i>
+                      <div>Statistics</div>
+                    </div>
+                    <div class="col">
+                      <i class="bi bi-superscript"></i>
+                      <div>Mathematics</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">  
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <i class="devicon-linux-plain"></i>
+                      <div>Linux</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-apache-plain"></i>
+                      <div>Apache</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-ubuntu-plain"></i>
+                      <div>Linux Ubuntu</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-html5-plain"></i>
+                      <div>HTML</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <i class="devicon-css3-plain"></i>
+                      <div>CSS</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-github-original"></i>
+                      <div>Github</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-docker-plain"></i>
+                      <div>Docker</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-apple-original"></i>
+                      <div>Apple OS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <i class="devicon-bootstrap-plain"></i>
+                      <div>Bootstrap</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-windows8-original"></i>
+                      <div>Windows OS</div>
+                    </div>
+                    <div class="col">
+                      <i class="bi bi-filetype-js"></i>
+                      <div>Scripting</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-javascript-plain"></i>
+                      <div>JavaScript</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <i class="devicon-java-plain"></i>
+                      <div>Java</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-pytorch-original"></i>
+                      <div>Pytorch</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-azure-plain"></i>
+                      <div>Azure</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-visualstudio-plain"></i>
+                      <div>VS Code</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <i class="devicon-pandas-original"></i>
+                      <div>Pandas</div>
+                    </div>
+                    <div class="col">
+                      <i class="devicon-django-plain"></i>
+                      <div>Django</div>
+                    </div>
+                    <div class="col">
+                      <i class="bi bi-hdd-network-fill"></i>
+                      <div>Networking</div>
+                    </div>
+                    <div class="col">
+                      <i class="bi bi-medium"></i>
+                      <div>UX/UI</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <h3 class="resume-title">Sumary</h3>
+            <div>
+              <h4>Camilo Sierra</h4>
+              <p><em>Certified IT tech support and developer with over 4 years of experience.</em></p>
+              <ul>
+                <li>Montreal, Quebec, Canada.</li>
+                <li>Micro-Bachelors: Mathematics &amp; Statistics</li>
+                <li>DEP: Computing Support</li>
+                <li>AEC: Commercial Communication</li>
+              </ul>
+              <!-- Download a Copy of my cv -->
+              <p><em><u><a href="/assets/Documents/CamiloSierra.pdf" download="CamiloSierra.pdf">Download a copy</a></u></em></p>
+            </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>L1 - L2 IT Technician</h4>
+              <h5>2022 - 2024</h5>
+              <p><em><a href="https://www.allspringglobal.com/" target="_blank">Allspring Global Investments</a> - <a href="https://anone.group/" target="_blank">Anone</a></em></p>
+              <p><em>Montreal, Quebec.</em></p>
+              <p>Provide technical support to a fast-paced investment firm. Configure CORP networks on personal and company hardware. Maintain and update profiles in Azure company portal. Fix and configure available resources.</p>
+              <ul>
+                <li>Scripting and automations for repetitive tasks.</li>
+                <li>Provide quick and efficient solutions for Wall-Street stock brokers.</li>
+                <li>Change, configure & set company hardware resources.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>SQL Support Programmer</h4>
+              <h5>2021 - 2022</h5>
+              <p><em><a href="https://www.tecsys.com/" target="_blank">Tecsys</a></em></p>
+              <p><em>Montreal, Quebec.</em></p>
+              <p>Support WMS platforms source code. Assess for incidents and report system failures. Resolve SQL conflicts on
+                remote DBMS Production. Fast-paced solutions.</p>
+              <ul>
+                <li>Scripting and deploying automations for repetitive tasks.</li>
+                <li>RDBMS configurations and support.</li>
+                <li>Java scripting and pathing for software processing.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Marketing Specialist</h4>
+              <h5>2019 - 2020</h5>
+              <p><em><a href="https://republicadelcacao.com/" target="_blank">Republica Del Cacao</a></em></p>
+              <p><em>Bogotá, Colombia.</em></p>
+              <p>Manage sales, marketing and web incorporations. Ensure a seamless workflow and consistency over retails sales and
+                web marketing target strategies. Meet key performance indexes and metrics.</p>
+              <ul>
+                <li>Create, develop and execute marketing strategies.</li>
+                <li>Create, develop KPIs and reports for Management.</li>
+                <li>Coordinate and web structure for consistency and effective marketing.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Customer Support</h4>
+              <h5>2018 - 2019</h5>
+              <p><em><a href="https://www.teleperformance.com/en-us/locations/colombia-site/colombia/" target="_blank">Tele-Performance</a></em></p>
+              <p><em>Bogotá, Colombia.</em></p>
+              <p>Fast-Phase work with SAP ticketing system. Customer Support and client relation.</p>
+              <ul>
+                <li>SAP Ticketing Fulfillment.</li>
+                <li>Multitasking.</li>
+                <li>Communication skills.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Mathematics &amp; Statistics</h4>
+              <h5>2023 - Ongoing</h5>
+              <p><em><a href="https://www.lse.ac.uk/" target="_blank">LSE - The London School of Economics and Political science</a></em></p>
+              <p><em>MicroBachelors ® Program in Mathematics and Statistics Fundamentals</em></p>
+              <p>Essential mathematical and statistical concepts, methods, techniques and skills. Mathematical techniques to solve problems in economics and related subjects. Master statistics fundamentals and learn to apply a variety of methods for explaining, summarising and presenting data and interpreting results clearly using appropriate diagrams, titles and labels when required</p>
+            </div>
+            <div class="resume-item">
+              <h4>Computing Support</h4>
+              <h5>2020 - 2022</h5>
+              <p><em><a href="https://www.teccart.qc.ca/" target="_blank">Institut Teccart</a></em></p>
+              <p><em>DEP Computing Support Technician</em></p>
+              <p>Knowledge of analytical and problem solving skills, operating systems, telecommunication protocols, IT security, management of local and wide area networks, personal computers and office software systems. Communication skills qualities with Bilingualism.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Commercial Communication</h4>
+              <h5>2017 - 2019</h5>
+              <p><em><a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank">SENA - National Learning Service</a></em></p>
+              <p><em>Commercial Communicator Technician</em></p>
+              <p>Train and supervise staff. Act as spokesperson for an organization. Advise clients on advertising or sales promotion strategies. Answer written and oral inquiries. Assist in the preparation of brochures, reports, newsletters and other material</p>
+            </div>
+          </div>
+        </div>
+        <br><hr>
+        <div class="col-lg-9" data-aos="fade-up">
+          <h3 style="margin: 20px;">Volunteering</h3>
+          <div class="resume-item">
+            <h4>Web Developer</h4>
+            <h5>2022 - 2023</h5>
+            <p><em><a href="https://latinarte.ca/" target="_blank">LatinArte</a></em></p>
+            <p><em>Montreal, Quebec.</em></p>
+            <p>Web development and maintenance of all resources for blog and event deployments on the website. Distribution of new content for event monitoring on a Wordpress based  platform.</p>
+            <ul>
+              <li>Develop and deploy new content to the website.</li>
+              <li>Improve speed & UX/UI on wordpress CMS.</li>
+              <li>Debugging and patching source code.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+
+      <!-- ======= Portfolio Section
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Portfolio Section -->
+
+      <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services +</h2>
+          <p>Is not a secret to anyone, that we are more than a set of sharp skill, we are people, for that reason I found extremely important to showcases not only my skills as an Analyst but also as a human being.</p>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-megaphone-fill"></i></div>
+            <h4 class="title">Active Communication</h4>
+            <p class="description"> I believe in the power of open and honest communication. Actively listening to others, expressing thoughts clearly, and fostering a collaborative environment are essential aspects of effective communication. I strive to ensure that everyone feels heard and valued.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-hammer"></i></div>
+            <h4 class="title">Dedication</h4>
+            <p class="description">Dedication is the driving force behind achieving goals and making a positive impact. I approach tasks with commitment and perseverance, recognizing that meaningful accomplishments often require sustained effort and focus.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
+            <h4 class="title">Constant Improvement</h4>
+            <p class="description">Embracing a mindset of continuous improvement is crucial for personal and collective growth. I am dedicated to learning, evolving, and adapting to new challenges. This value encourages me to seek out opportunities for development and to contribute to the improvement of processes and outcomes.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-skip-start-circle-fill"></i></div>
+            <h4 class="title">Initiative</h4>
+            <p class="description">I believe in taking proactive steps to make a difference. Initiative involves a willingness to step outside of comfort zones, explore new ideas, and contribute innovative solutions. I strive to be a catalyst for positive change, always looking for ways to improve situations and create opportunities.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-person-plus-fill"></i></div>
+            <h4 class="title">Camaraderie</h4>
+            <p class="description">Building strong, supportive relationships is a cornerstone of a fulfilling life. I value camaraderie by fostering a sense of community, understanding, and teamwork. Celebrating successes together and offering support during challenges contribute to a positive and uplifting environment.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-emoji-laughing-fill"></i></div>
+            <h4 class="title">Humor</h4>
+            <p class="description">A good sense of humor adds lightness to life's challenges and strengthens connections with others. I appreciate the power of laughter in relieving stress, building rapport, and creating a positive atmosphere. Humor is a valuable tool for maintaining perspective and resilience in the face of difficulties.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+      <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Montreal, Canada</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178787.43121360563!2d-73.87667812354086!3d45.55930461093001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1700696949630!5m2!1sen!2sca" frameborder="0" style="border:0; width: 100%; height: 290px; border-radius: 20px; filter: grayscale(70%);"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formsubmit.co/your@email.com" method="POST" > <!--role="form" class="php-email-form"-->
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Full Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">E-mail Address</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="font-size: 5px;">
+    <div class="container">
+      <div class="credits" style="font-size: 5px;">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+<script defer>
+  document.getElementById('shareButton').addEventListener('click', () => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Share Example',
+      text: 'Check out this awesome content!',
+      url: 'https://example.com'
+    })
+    .then(() => console.log('Successful share'))
+    .catch((error) => console.log('Error sharing:', error));
+  } else {
+    // Fallback for browsers that do not support the Share API
+    const shareUrl = 'https://example.com'; // Replace with your actual URL
+    const dummyInput = document.createElement('input');
+    document.body.appendChild(dummyInput);
+    dummyInput.value = shareUrl;
+    dummyInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummyInput);
+
+    // Bootstrap alert
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success alert-dismissible fade show';
+    alert.innerHTML = `
+      <strong>Link copied to clipboard:</strong> ${shareUrl}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    `;
+    document.body.appendChild(alert);
+
+    // Automatically close the alert after a few seconds (optional)
+    setTimeout(() => {
+      document.body.removeChild(alert);
+    }, 5000);
+  }
+});
+</script>
+
 
 </body>
-
-<script defer src="https://www.gstatic.com/charts/loader.js"></script>
-<script defer src="./root/source/js/script.js"></script>
 
 </html>
