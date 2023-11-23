@@ -967,7 +967,89 @@ section {
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 20px;
+  box-shadow: none;
+  font-size: 14px;
 
+  background: linear-gradient(to right, #ffffff65, #b4bbcd65 , #ffffff65); ;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  opacity: 0.99;
+  color: white;
+}
+.contact .php-email-form button[type=submit] {
+  background: #474E68;
+  border: 0;
+  padding: 10px 24px;
+  color: #b4bbcd;
+  transition: 0.4s;
+  border-radius: 4px;
+  border: 1px solid #b4bbcd;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #50577A;
+}
+
+.align-items-stretch form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.align-items-stretch input,
+.align-items-stretch label {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+
+.align-items-stretch input{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+
+  background: linear-gradient(to right, #ffffff65, #b4bbcd65 , #ffffff65); ;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  opacity: 0.99;
+  color: white;
+}
+
+.align-items-stretch input:hover{
+  background: linear-gradient(to right, #dcd0d065, #40475865 , #dcd0d065); ;
+
+}
+.messageStyle{
+  min-height: 20vh;
+}
+.sendtempform{
+  margin: 10px;
+  background-color: #50577A;
+  color: #d2d5df;
+  border: 1px solid #d2d5df;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 20%;
+}
+
+.sendtempfor:hover{
+  background-color: #d2d5df;
+  color: #50577A;
+}
+
+.lesswithform input{
+  max-width: 57%;
+}
+
+
+/*
 .contact .php-email-form .validate {
   display: none;
   margin: 0 0 15px 0;
@@ -1023,18 +1105,7 @@ section {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 20px;
-  box-shadow: none;
-  font-size: 14px;
 
-  background: linear-gradient(to right, #ffffff65, #b4bbcd65 , #ffffff65); ;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  opacity: 0.99;
-  color: white;
-}
 
 .contact .php-email-form input {
   height: 44px;
@@ -1044,20 +1115,8 @@ section {
   padding: 10px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #474E68;
-  border: 0;
-  padding: 10px 24px;
-  color: #b4bbcd;
-  transition: 0.4s;
-  border-radius: 4px;
-  border: 1px solid #b4bbcd;
-}
 
-.contact .php-email-form button[type=submit]:hover {
-  background: #50577A;
-}
-
+*/
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
