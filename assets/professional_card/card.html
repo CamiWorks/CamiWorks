@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilo Sierra</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+/* corp colors
+
+#202132 brown
+#F0AD15 main yelloe 
+#FCBB2C lighter yellow
+#FFE7CC Dark white
+#FFF0D9 light white
+
+
+*/
+
+
+
+body {
+	background-color: #ffffff;
+	background-image:  radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, #B4BBCD 0.5px);
+	background-size: 20px 20px;
+	background-position: 0 0,10px 10px; /*Background main color*/
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #ffffff;
+	background-size: 10px 10px;
+	background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, #fffaf3 0, #ffffff 50%);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #202132; /*Font color*/
+	padding-top: 30px;
+	position: relative;
+	width: 325px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .round {
+	border: 1px solid #d7d7d7; 
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #ffe7cc00; /*buttons background*/
+	border: 1px solid #202132; /*button contour*/
+	border-radius: 3px;
+	color: #202132; /*Font color button*/
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+button.primary:hover {
+	background-color: #202132; /*buttons background*/
+	border: 1px solid #FFF0D9; /*button contour*/
+	color: #FFF0D9;
+    transition-duration: 0.7s;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #202132; /*second button font color*/
+}
+
+button.primary.ghost:hover {
+	background-color: #202132;
+	color: #ffffff; /*second button font color*/
+}
+
+.skills {
+	background-color: #202132;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #404040;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+.skills ul li:hover {
+	border: 1px solid #868686;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+.skills a{
+	text-decoration: none;
+	color: white;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+.lang{
+	margin: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.lang button {
+	color: #202132;
+	background-color: transparent;
+	border: none;
+	font-size: 15px;
+}
+.lang button:hover {
+	color: white;
+}
+#master_container {
+	padding: 30px;
+}
+.round{
+	max-width: 60%;
+}
+a{
+text-decoration: none;
+}
+    </style>
+</head>
+<body>
+<div id="master_container" ></div>
+<!--
+	<footer>
+	<p>
+        CORP designed stamp - created by O&S 
+	</p>
+</footer>
+	
+-->
+</body>
+<script>
+
+//Core Information
+
+let photo = './resoures/port2.png'
+let name = 'Camilo Sierra' // 
+const phy_addres = ['Montreal, Canada <br>', 'https://maps.app.goo.gl/6ENgzFgKLZ5HU6jd7']; // ['address' , 'shared link google maps']
+let phone_number = '+15146646424'
+let corporate_contact = 'https://camiworks.github.io/CamiWorks/index.html'
+let email = 'sierra170299camilo@gmail.com' //
+let office_number = '+14504866341'
+let web_site = 'https://camiworks.github.io/CamiWorks/index.html'
+let linked_in = 'https://www.linkedin.com/in/camilo-sierra-l-7a9637265' //
+let social_media = ''
+
+const my_languages = ['eng_lang()','french_lang()','spanish_lang()']
+const mylangDes = ['English','Français','Spanish']
+
+function languagesAddition(lanList,langDesc) {
+	let codeString = '<div class="lang" id="lang_id">'
+	let counter = 0
+	while (counter < lanList.length){
+		codeString = codeString +`<button type="button" onclick="${lanList[counter]}" style="margin-bottom: 5px;"> <u>${langDesc[counter]}</u> </button>`
+		counter++;
+	}
+	codeString = codeString + '</div>';
+	return codeString
+}
+
+let default_text = `
+<div class="card-container">
+	<h2>${name}</h2> <br><br>
+	<img class="round" src="${photo}" alt="user_picture" /> <br> <br> <br><br>
+    <u> <a href="${phy_addres[1]}" style="color: #202132; font-size:13px;"target="_blank" rel="noopener noreferrer">${phy_addres[0]}</a> </u><br>
+	<div class="buttons">
+		<a href="tel:${phone_number}" style="text-decoration: none; color:white ">
+			<button class="primary">
+			Whatsapp
+			</button>
+		</a>
+		<a href="${corporate_contact}">
+			<button class="primary ghost">
+				Web-Site
+			</button>
+		</a>
+	</div><br>
+	<div class="skills" style="color: white;">
+		<h6>additional information +</h6> <br>
+		<ul>
+			<a href="mailto:${email}"><li>Email</li></a> 
+			<!-- <a href="tel:${office_number}"><li>Office</li></a> -->
+			<!-- <a href="${web_site}"><li>Website</li></a> -->
+			<!-- <a href="${social_media}"><li>Social</li></a> -->
+			<a href="${linked_in}"><li>Linked-in</li></a>
+		</ul>
+	</div>
+</div>
+${languagesAddition(my_languages,mylangDes)}
+`
+
+document.getElementById('master_container').innerHTML = default_text
+
+function eng_lang() {
+	document.getElementById('master_container').innerHTML = default_text
+}
+
+
+function spanish_lang(){
+	document.getElementById('master_container').innerHTML = `
+	<div class="card-container">
+		<h2>${name}</h2><br><br>
+		<img class="round" src="${photo}" alt="user_picture" /> <br> <br><br><br>
+		<u> <a href="${phy_addres[1]}" style="color: #202132; font-size:13px;"target="_blank" rel="noopener noreferrer">${phy_addres[0]}</a> </u><br>
+		<div class="buttons">
+			<a href="tel:${phone_number}" style="text-decoration: none; color:white ">
+				<button class="primary">
+				Whatsapp
+				</button>
+			</a>
+			<a href="${corporate_contact}">
+				<button class="primary ghost">
+					Web-Site
+				</button>
+			</a>
+		</div><br>
+		<div class="skills" style="color: white;">
+			<h6>Información adicional +</h6> <br>
+			<ul>
+				<a href="mailto:${email}"><li>Correo electrónico</li></a> 
+				<!-- <a href="tel:${office_number}"><li>Oficina</li></a> -->
+				<!-- <a href="${web_site}"><li>Sitio web</li></a> -->
+				<!-- <a href="${social_media}"><li>Red personal</li></a> -->
+				<a href="${linked_in}"><li>Linked-in</li></a>
+			</ul>
+		</div>
+	</div>
+	${languagesAddition(my_languages,mylangDes)}
+`
+}
+function english_lang(){
+	document.getElementById('master_container').innerHTML = default_text
+}
+function french_lang(){
+	document.getElementById('master_container').innerHTML =`
+<div class="card-container">
+	<h2>${name}</h2> <br><br>
+	<img class="round" src="${photo}" alt="user_picture" /> <br> <br><br><br>
+	<u> <a href="${phy_addres[1]}" style="color: #202132; font-size:13px;"target="_blank" rel="noopener noreferrer">${phy_addres[0]}</a> </u><br>
+	<div class="buttons">
+		<a href="tel:${phone_number}" style="text-decoration: none; color:white ">
+			<button class="primary">
+				Whatsapp
+			</button>
+		</a>
+		<a href="${corporate_contact}">
+			<button class="primary ghost">
+				Web-Site
+			</button>
+		</a>
+	</div><br>
+	<div class="skills" style="color: white;">
+		<h6> Informations complémentaires +</h6> <br>
+		<ul>
+			<a href="mailto:${email}"><li>Courriel</li></a> 
+			<!-- <a href="tel:${office_number}"><li>Bureau</li></a> -->
+			<!-- <a href="${web_site}"><li>Site Internet</li></a> -->
+			<!-- <a href="${social_media}"><li>Social</li></a> -->
+			<a href="${linked_in}"><li>Linked-in</li></a>
+		</ul>
+	</div>
+</div>
+${languagesAddition(my_languages,mylangDes)}
+	`
+}
+
+</script>
+</html>
